@@ -7,8 +7,8 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 import com.opensource.cmsclient.configuration.RibbonConfiguration;
 
-@EnableDiscoveryClient
 @SpringBootApplication
+@EnableDiscoveryClient
 @RibbonClient(name = "server", configuration = RibbonConfiguration.class)
 public class CmsclientApplication {
 
